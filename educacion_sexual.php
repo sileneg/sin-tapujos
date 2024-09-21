@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infórmate un poco sobre Educación Sexual</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" >
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        main {
+            flex-grow: 1;
+            padding: 2rem;
+        }
+        h1, h2 {
+            font-family: 'Pacifico', cursive;
+            color: #343a40;
+            text-align: center;
+        }
+        h2 {
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .section:nth-child(odd) .section-text {
+            order: 2;
+        }
+        .section img {
+            max-width: 35%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .section .section-text {
+            max-width: 65%;
+            text-align: justify;
+            margin: 0 20px;
+        }
+        .links {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .links a {
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+        }
+        .glosario-link {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .glosario-link a, .presentar-prueba-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="ini">
+            <div id="logo"><img src="images/logo.png" alt=""></div>
+                <h1 id="title"><span style="color:red">S</span><span style="color:orange">i</span><span style="color:yellow">n </span><span style="color:green">T</span><span style="color:blue">a</span><span style="color:indigo">p</span><span style="color:purple">u</span><span style="color:red">j</span><span style="color:yellow">o</span><span style="color:orange">s</span></h1>
+                <div class="welcome" id="welcome">
+                 <span id="welcome-message">Bienvenido, <?php session_start(); echo $_SESSION['user_name']; ?><span>
+                    <a href="php/logout.php" class="btn-logout logout-link">Cerrar Sesión</a>
+                </div>
+        </div>
+        
+        <nav class="nav">
+            <ul>
+                <li class="btnmenu"><a href="index.html">Inicio</a></li>                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Infórmate un poco sobre Educación Sexual</h1>
+        <div class="section">
+            <h2>Educación Sexual Integral (ESI)</h2>
+            <div class="section-text">
+                <p>
+                    1. <strong>Educación Sexual Integral (ESI):</strong> La educación sexual integral es un proceso educativo que proporciona información precisa, objetiva y actualizada sobre aspectos relacionados con la sexualidad humana. Incluye temas como la reproducción, la prevención de enfermedades de transmisión sexual (ETS), la anticoncepción, las relaciones interpersonales y el respeto hacia uno mismo y hacia los demás.<br>
+                    2. <strong>Prevención de Enfermedades de Transmisión Sexual (ETS):</strong> La prevención de ETS es fundamental para mantener una buena salud sexual. Esto incluye el uso adecuado de preservativos durante las relaciones sexuales, la realización regular de pruebas de detección de ETS, la comunicación abierta y honesta con la pareja sobre el historial sexual y la vacunación contra enfermedades como el virus del papiloma humano (VPH) y la hepatitis B.<br>
+                    3. <strong>Planificación Familiar y Anticoncepción:</strong> La planificación familiar implica tomar decisiones informadas sobre el momento y el número de hijos que una persona o pareja desean tener. Esto incluye el uso de métodos anticonceptivos efectivos, la consulta con un profesional de la salud para elegir el método más adecuado y la comprensión de los riesgos y beneficios de cada opción anticonceptiva.<br>
+                    4. <strong>Salud Mental y Sexualidad:</strong> La salud mental juega un papel importante en la salud sexual y el bienestar general. La autoestima, el manejo del estrés, la comunicación efectiva y la resolución de conflictos son aspectos clave que pueden influir en la vida sexual de una persona. Es importante buscar apoyo psicológico cuando sea necesario y mantener una actitud positiva hacia la sexualidad.<br>
+                    5. <strong>Consentimiento y Relaciones Saludables:</strong> El consentimiento mutuo es fundamental en cualquier relación sexual. Todas las personas involucradas deben dar su consentimiento libre, voluntario y explícito antes de participar en cualquier actividad sexual. Además, es importante promover relaciones basadas en el respeto, la confianza, la comunicación abierta y el apoyo mutuo.<br>
+                    La salud sexual es un aspecto integral del bienestar general y requiere atención y cuidado adecuados a lo largo de la vida. Es fundamental educarse, tomar decisiones informadas y buscar apoyo profesional cuando sea necesario para mantener una vida sexual saludable y satisfactoria.
+                </p>
+            </div>
+            <img src="images/salud_sexual.jpg" alt="Salud Sexual">
+        </div>
+
+        <div class="section">
+            <h2>Orientación Sexual (Sé libre de expresarte como te gusta)</h2>
+            <div class="section-text">
+                <p>
+                    1. <strong>¿Qué es la Orientación Sexual?:</strong> La orientación sexual se refiere a los patrones de atracción emocional, romántica y/o sexual hacia personas de un determinado género. Las orientaciones sexuales comunes incluyen heterosexualidad (atracción hacia personas del sexo opuesto), homosexualidad (atracción hacia personas del mismo sexo) y bisexualidad (atracción hacia personas de más de un género).<br>
+                    2. <strong>Diversidad de Orientaciones Sexuales:</strong> La orientación sexual es diversa y puede manifestarse de diversas formas en diferentes personas. Además de la heterosexualidad, homosexualidad y bisexualidad, existen otras orientaciones sexuales menos conocidas, como la pansexualidad (atracción hacia personas de todos los géneros), la asexualidad (ausencia de atracción sexual) y la demisexualidad (atracción sexual solo después de establecer una conexión emocional).<br>
+                    3. <strong>Desarrollo de la Orientación Sexual:</strong> La orientación sexual puede ser una parte fundamental de la identidad de una persona y puede desarrollarse a lo largo del tiempo. Algunas personas pueden tener una orientación sexual clara desde una edad temprana, mientras que otras pueden experimentar cambios o dudas a lo largo de su vida. Es importante recordar que la orientación sexual es una parte natural de la diversidad humana y no es una elección.<br>
+                    4. <strong>Aceptación y Respeto:</strong> Es fundamental promover la aceptación y el respeto hacia todas las orientaciones sexuales. Todas las personas merecen vivir libres de discriminación y violencia debido a su orientación sexual. La inclusión y el apoyo de la diversidad sexual en la sociedad contribuyen a crear entornos seguros y acogedores para todas las personas, independientemente de su orientación sexual.<br>
+                    5. <strong>Recursos y Apoyo:</strong> Existen numerosos recursos y organizaciones dedicadas a brindar apoyo y orientación a personas que exploran su orientación sexual o que enfrentan desafíos relacionados con ella. Estos incluyen grupos de apoyo, servicios de asesoramiento y líneas directas de ayuda, donde las personas pueden encontrar información, orientación y comunidad. Promover la comprensión, el respeto y la aceptación de la diversidad de orientaciones sexuales es fundamental para crear sociedades inclusivas y equitativas donde todas las personas puedan vivir libres y auténticamente.
+                </p>
+            </div>
+            <img src="images/orientacion_sexual.jpg" alt="Orientación Sexual">
+        </div>
+
+        <div class="section">
+            <h2>Métodos Anticonceptivos</h2>
+            <div class="section-text">
+                <p>
+                    1. <strong>Anticonceptivos Hormonales:</strong> Los anticonceptivos hormonales son métodos que contienen hormonas sintéticas similares a las producidas naturalmente por el cuerpo, como píldoras, parches, inyecciones, implantes y anillos vaginales. Estos métodos previenen el embarazo al inhibir la ovulación, espesar el moco cervical y adelgazar el revestimiento del útero, dificultando la implantación del óvulo fertilizado.<br>
+                    2. <strong>Preservativo Masculino y Femenino:</strong> Los preservativos son barreras físicas que evitan que el esperma entre en contacto con el óvulo. El preservativo masculino se coloca sobre el pene erecto, mientras que el femenino se inserta en la vagina antes de la relación sexual. Son altamente efectivos para prevenir embarazos y proteger contra enfermedades de transmisión sexual (ETS).<br>
+                    3. <strong>Dispositivo Intrauterino (DIU):</strong> El DIU es un pequeño dispositivo de plástico o metal que se coloca dentro del útero. Hay dos tipos: los que liberan hormonas y los de cobre. Los DIU hormonales liberan progestina, que espesa el moco cervical y dificulta la movilidad de los espermatozoides. Los DIU de cobre crean un ambiente hostil para los espermatozoides y el óvulo fertilizado. Son altamente efectivos y pueden durar varios años.<br>
+                    4. <strong>Anticoncepción de Emergencia:</strong> La anticoncepción de emergencia, también conocida como la "píldora del día después", es un método para prevenir el embarazo después de una relación sexual sin protección o cuando falla otro método anticonceptivo. Debe tomarse dentro de las 72 horas posteriores al acto sexual, aunque es más efectiva cuanto antes se tome.<br>
+                    5. <strong>Métodos de Planificación Familiar Natural:</strong> Estos métodos se basan en la observación y seguimiento del ciclo menstrual para determinar los días fértiles de la mujer. Pueden incluir el método del ritmo, la temperatura basal del cuerpo y la observación del moco cervical. Requieren un seguimiento cuidadoso y pueden ser menos efectivos que otros métodos anticonceptivos. Es importante que cada persona encuentre el método anticonceptivo que mejor se adapte a sus necesidades y estilo de vida, y que consulte a un profesional de la salud para recibir orientación y atención personalizada.
+                </p>
+            </div>
+            <img src="images/metodos_anticonceptivos.jpg" alt="Métodos Anticonceptivos">
+        </div>
+
+        <div class="glosario-link">
+            <a href="glosario.php" class="button">Glosario de Términos</a>
+            <a href="info_prueba.php" class="button">Presentar Prueba</a>
+        </div>
+
+        <div class="links">
+            <h3>Enlaces Interesantes</h3>
+            <a href="https://www.who.int/es/news-room/questions-and-answers/item/comprehensive-sexuality-education#:~:text=La%20educaci%C3%B3n%20sexual%20dota%20a,los%20derechos%20de%20los%20dem%C3%A1s." target="_blank">Organización Mundial de la Salud</a>
+            <a href="https://es.wikipedia.org/wiki/Educaci%C3%B3n_sexual" target="_blank">Wikipedia - Educación Sexual</a>
+            <a href="https://profamilia.org.co/las-ventajas-de-la-educacion-sexual-integral/" target="_blank">Profamilia - Educación Sexual Integral</a>
+            <a href="https://www.mineducacion.gov.co/1621/article-173947.html" target="_blank">Ministerio de Educación Nacional</a>
+        </div>
+    </main>
+
+    <footer id="foo">
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>+57 321 497 99 15</p>
+            </div>
+            <div class="content-foo">
+                <h4>Correo</h4>
+                <p>@SinTapujos</p>
+            </div>
+            <div class="content-foo">
+                <h4>Dirección</h4>
+                <p>Cra. 7 # 5 - 22</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; SinTapujos. Todos los Derechos Reservados</h2>
+    </footer>
+</body>
+</html>
